@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DemoNavigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Здравствуйте, Игорь Станиславович</string>
+    <string name="sorry">Простите, пожалуйста, что так поздно сдаю</string>
+    <string name="but">Но теперь я знаю, как работать с фрагментами и навигацией</string>
+    <string name="i">Я старалась!</string>
+    <string name="not">Просто я тугодум</string>
+    <string name="promise">Не ругайтесь очень сильно</string>
+    <string name="fate">И не отчисляйте меня, пожалуйста</string>
+    <string name="nice">Спасибо :)</string>
+    <string name="well">Спасибо :(</string>
+    <string name="panic">Ой :(</string>
+
+    <string name="next">Далее</string>
+    <string name="aaa">Назад</string>
+    <string name="first">First</string>
+    <string name="second">Second</string>
+
+    <string name="happiness">Не отчислю</string>
+    <string name="hope">Я подумаю</string>
+    <string name="sadness">Отчислю</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="ru.rut.demonavigation.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment2"
+            app:destination="@id/secondFragment"
+            app:enterAnim="@anim/fade_out"
+            app:exitAnim="@anim/fade_in"
+            app:popEnterAnim="@anim/slide_out"
+            app:popExitAnim="@anim/slide_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="ru.rut.demonavigation.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_fragment3"
+            app:destination="@id/fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="ru.rut.demonavigation.Fragment3"
+        android:label="fragment3"
+        tools:layout="@layout/fragment3" >
+        <action
+            android:id="@+id/action_fragment3_to_fragment4"
+            app:destination="@id/fragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="ru.rut.demonavigation.Fragment4"
+        android:label="Fragment4"
+        tools:layout="@layout/fragment4" >
+        <action
+            android:id="@+id/action_fragment4_to_fragment5"
+            app:destination="@id/fragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment5"
+        android:name="ru.rut.demonavigation.Fragment5"
+        android:label="Fragment5"
+        tools:layout="@layout/fragment5" >
+        <action
+            android:id="@+id/action_fragment5_to_fragment6"
+            app:destination="@id/fragment6" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment6"
+        android:name="ru.rut.demonavigation.Fragment6"
+        android:label="Fragment6"
+        tools:layout="@layout/fragment6" >
+        <action
+            android:id="@+id/action_fragment6_to_fragment7"
+            app:destination="@id/navigation" />
+    </fragment>
+    <navigation android:id="@+id/navigation"
+        app:startDestination="@id/fragment7">
+        <fragment
+            android:id="@+id/fragment7"
+            android:name="ru.rut.demonavigation.Fragment7"
+            android:label="Fragment7"
+            tools:layout="@layout/fragment7" >
+            <action
+                android:id="@+id/action_fragment7_to_fragment8"
+                app:destination="@id/fragment8" />
+            <action
+                android:id="@+id/action_fragment7_to_fragment9"
+                app:destination="@id/fragment9" />
+            <action
+                android:id="@+id/action_fragment7_to_fragment10"
+                app:destination="@id/fragment10" />
+        </fragment>
+        <fragment
+            android:id="@+id/fragment8"
+            android:name="ru.rut.demonavigation.Fragment8"
+            android:label="Fragment8"
+            tools:layout="@layout/fragment8" />
+        <fragment
+            android:id="@+id/fragment9"
+            android:name="ru.rut.demonavigation.Fragment9"
+            android:label="Fragment9"
+            tools:layout="@layout/fragment9" />
+        <fragment
+            android:id="@+id/fragment10"
+            android:name="ru.rut.demonavigation.Fragment10"
+            android:label="Fragment10"
+            tools:layout="@layout/fragment10" />
+    </navigation>
+</navigation>
